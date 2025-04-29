@@ -97,3 +97,13 @@ You also pay per completion depending on model/token limits (small cost for answ
 - Generate final answer from ChatGPT
 
 - Display context + answer in the UI
+
+## 🔮 Future Updates
+We are committed to making AskMyDoc more accessible and cost-effective. To achieve this, we plan to:
+
+Explore Alternative Embedding Methods: Investigate open-source or more affordable embedding models to replace the current paid OpenAI embeddings.​
+
+Integrate Gemini for Response Generation: Utilize Google's Gemini API for generating answers, leveraging its generous free tier and advanced capabilities.​
+Google AI Studio
+
+By implementing these changes, we aim to reduce or eliminate usage costs, making AskMyDoc freely available to a broader audience.
