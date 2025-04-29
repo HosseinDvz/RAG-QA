@@ -61,4 +61,39 @@ PINECONE_API=your-pinecone-api-key
 ```
 streamlit run AskMyDoc.py
 ```
+## 💸 Important Notes
+### Pinecone:
+Pinecone offers a generous free plan — enough for small to medium datasets.
 
+### OpenAI Embeddings (text-embedding-ada-002):
+⚠️ NOT free — you are billed based on the amount of text embedded.
+
+Current cost is roughly $0.0001 per 1,000 tokens (as of 2024).
+
+Short documents are cheap; large PDFs can cost more. Always monitor your usage!
+
+### ChatGPT 4o:
+You also pay per completion depending on model/token limits (small cost for answers).
+
+## 🧠 How It Works
+- Upload a PDF file
+
+- Extract document text
+
+- Extract title (from metadata or GPT if missing)
+
+- Clean and chunk the document
+
+- Generate vector embeddings (OpenAI API)
+
+- Store embeddings in Pinecone
+
+- Ask a question
+
+- Retrieve top similar chunks (with score threshold 0.8)
+
+- Build a system prompt with retrieved context
+
+- Generate final answer from ChatGPT
+
+- Display context + answer in the UI
