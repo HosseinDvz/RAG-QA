@@ -145,7 +145,7 @@ def retrieve_similar_chunks(query_embedding: List[float], top_k: int = 3, score_
 
 
 system_prompt_template = (
-    "Answer questions about JavaScript using at least 70% of the provided context. "
+    "Answer questions about uploaded book using at least 70% of the provided context. "
     "Answer primarily based on the context and must specify which parts are not from the context.\n\n"
     "Context:\n{}"
 )
