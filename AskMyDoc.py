@@ -1,7 +1,6 @@
 import os
 import fitz  # PyMuPDF
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from typing import List, Any
 import logging
 from openai import OpenAI
 from pinecone import Pinecone
