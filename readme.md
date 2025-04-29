@@ -42,4 +42,23 @@ The system uses:
 ### Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+## 🔑 Setup Instructions
+
+- Clone the repository:
+```
+git clone https://github.com/HosseinDvz/RAG-QA
+cd RAG-QA
+```
+ - Create a .env file in the root directory:
+```
+OPENAI_API=your-openai-api-key
+PINECONE_API=your-pinecone-api-key
+```
+
+ - Run the Streamlit app:
+```
+streamlit run AskMyDoc.py
+```
 
