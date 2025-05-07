@@ -176,7 +176,7 @@ def rag_chatbot(query: str) -> Tuple[str, str, str]:
 import streamlit as st
 
 st.set_page_config(layout="wide")
-st.title("AskMyDoc (RAG)")  # Typo corrected from "JAskMyDoc" unless you intentionally want it.
+st.title("AskMyDoc (RAG)")
 
 if 'chunks_uploaded' not in st.session_state:
     st.session_state.chunks_uploaded = False
